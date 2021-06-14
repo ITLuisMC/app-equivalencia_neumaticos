@@ -1,0 +1,163 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.cHome {
+  text-align: center;
+}
+
+.contenedorNav {
+  background-color: #0f2424;
+  top: 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+
+}
+
+.contenidoNav a {
+  color: rgb(167, 160, 156);
+  text-decoration: none;
+}
+
+.contenidoNav a:hover {
+  color: rgb(247, 247, 241);
+}
+
+.contenidoNav p {
+  display: inline-flex;
+  padding: 2em;
+}
+
+.contenidoModalInfo {
+  background-color: aqua;
+  width: 300px;
+  padding: 10px 10px;
+  margin: 10% auto;
+  position: relative;
+}
+
+.contenedorModalInfo {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contenidoModalInfo a,
+.contenidoModalAcerca a {
+  clear: both;
+  color: black;
+  display: block;
+  float: right;
+  text-decoration: none;
+}
+
+.contenidoModalInfo a:hover,
+.contenidoModalAcerca a:hover {
+  color: rgb(31, 219, 168);
+}
+
+.contenidoModalInfo p,
+.contenidoModalAcerca p {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.contenidoModalInfo li,
+.contenidoModalAcerca li {
+  text-align: left;
+  margin-top: 5px;
+}
+
+#idInfoModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contenidoModalAcerca {
+  background-color: aqua;
+  width: 300px;
+  padding: 10px 10px;
+  margin: 10% auto;
+  position: relative;
+}
+
+.contenedorModalAcerca {
+  background-color: rgba(0, 0, 0, .8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+}
+
+#idAcercaModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contenedor1 {
+  align-items: center;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.contenido1 {
+  background-color: #cd8e8e;
+  border: 1px solid yellow;
+  padding: 8px;
+}
+
+.contenedor2 {
+  align-items: center;
+  background-color: #0fafaf;
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#idSecNeumV {
+  margin-bottom: 0.5em;
+}
+
+#idSecNeumN {
+  margin-top: 0.5em;
+}
+
+.contenedorPie {
+  background-color: #0f2424;
+  bottom: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+.contenidoPie {
+  color: rgb(126, 53, 144)
+}
+
+.contenidoPie a {
+  color: rgb(167, 160, 156);
+  text-decoration: none;
+}
+
+.contenidoPie a:hover {
+  color: rgb(247, 247, 241);
+}

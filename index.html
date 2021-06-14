@@ -1,0 +1,118 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="author" content="Luis Martínez" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Equivalencias y desarrollo de los neumaticos</title>
+  <link href="css/lib/animate/animate.css" rel="stylesheet" />
+  <link href="css/css.css" rel="stylesheet" />
+</head>
+
+<body class="cHome">
+  <nav class="contenedorNav" id="idNav">
+    <div class="contenidoNav" id="idInfoContraido">
+      <p><a href="#idInfoModal" onclick="animaModal()">INFO</a></p>
+    </div>
+  </nav>
+  <main>
+    <section class="contenedor1" id="idInicio">
+      <div class="contenido1 animated flash">
+        <h1>CALCULADORA DE<br>EQUIVALENCIAS<br>ENTRE<br>NEUMATICOS</h1>
+      </div>
+    </section>
+    <section class="contenedor2" id="idSecNeums">
+      <div class="contenido2 animated lightSpeedIn" id="idSecNeumV">
+        <div id="idCajaTituloV">
+          <h3>neumatico montado</h3>
+        </div>
+        <div id="idMedidasV">
+          <div id="idCajaFormV">
+            <form id="idFormV" name="Neum1">
+              <label form="ancho1">Ancho</label>
+              <input id="idAnchoN1" type="number" min="40" max="425" name="ancho1" step="5" placeholder="205" value=""
+                onblur="validInputsNV(ruedaV)" />
+              <label form="perfil1">Perfil</label>
+              <input id="idPerfilN1" type="number" min="40" max="100" name="perfil1" step="5" placeholder="55" value=""
+                onblur="validInputsNV(ruedaV)" />
+              <label form="radial1">Radial</label>
+              <input id="idRadialN1" type="number" min="5" max="25" name="radial1" placeholder="16" value=""
+                onblur="validInputsNV(ruedaV)" /><br />
+            </form>
+            <div id="idCajaResNV">
+              <h2 id="idTitDatV"></h2>
+              <h4 id="idDiametroN1"></h4>
+              <h4 id="idDesarrolloN1"></h4>
+              <h4 id="idToleranciaN1"></h4>
+            </div>
+          </div>
+        </div>
+        <div id="idCajaAvisoNV">
+          <span id="idAviso1">Introduzca las medidas del neumatico montado</span>
+        </div>
+      </div>
+      <div class="contenido2 animated lightSpeedIn" id="idSecNeumN">
+        <div id="idCajaTituloN">
+          <h3>neumatico nuevo</h3>
+        </div>
+        <div id="idMedidasN">
+          <div id="idCajaFormN">
+            <form id="idFormN" name="Neum2">
+              <label form="ancho2">Ancho</label>
+              <input id="idAnchoN2" type="number" min="40" max="425" name="ancho2" step="5" placeholder="195" value=""
+                onBlur="validInputsNN(ruedaN)" />
+              <label form="perfil2">Perfil</label>
+              <input id="idPerfilN2" type="number" min="40" max="100" name="perfil2" step="5" placeholder="65" value=""
+                onBlur="validInputsNN(ruedaN)" />
+              <label form="radial2">Radial</label>
+              <input id="idRadialN2" type="number" min="5" max="25" name="radial2" placeholder="15" value=""
+                onBlur="validInputsNN(ruedaN)" /><br />
+            </form>
+            <div id="idCajaResNN">
+              <h2 id="idTitDatN"></h2>
+              <h4 id="idDiametroN2"></h4>
+              <h4 id="idDesarrolloN2"></h4>
+              <h4 id="idToleranciaN2"></h4>
+            </div>
+          </div>
+        </div>
+        <div id="idCajaAvisoNN">
+          <span id="idAviso2">Introduzca las medidas del neumatico nuevo</span>
+        </div>
+      </div>
+      <div class="contenido2 animated fadeIn" id="idCajaBoton">
+        <input id="idBtn2" type="button" name="reiniciar" value="Reiniciar" onclick="window.location.reload()" />
+        <input id="idBtn1" type="button" name="calcular" value="Calcular" />
+        <input id="idBtn3" type="button" name="limpiar" value="Limpiar" onclick="limpiar()" />
+      </div>
+      <div class="contenido2 animated fadeIn" id="idCajaResultado">
+        <span id="idAviso"></span>
+      </div>
+    </section>
+    <section class="contenedor3 contenedorModalInfo" id="idInfoModal">
+      <div class="contenido3 contenidoModalInfo" id="idInfoContenido">
+        <a href="#" onclick="desAnimaModal()">X</a>
+        <h3>Explicacion</h3>
+        <p>¿Puedo montar unos neumáticos diferentes a los indicados en la ficha técnica?<br>La respuesta es sí, es
+          posible siempre que sean equivalentes cumpliendo los siguientes requisitos:<br></p>
+        <ul>
+          <li>Igual diámetro exterior con una tolerancia que no supere el 3%.</li>
+          <li>Índice de carga igual o superior.</li>
+          <li>Índice de velocidad igual o superior salvo en el caso del marcaje M+S, que puede ser inferior.</li>
+          <li>Perfil de llanta de montaje correspondiente al neumático a cambiar.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="contenedorPie animated fadeIn" id="idPie">
+    <div class="contenidoPie">
+      <p><a href="https://www.luismc.es" target="blank">www.luismc.es</a></p>
+    </div>
+  </footer>
+  <script src="js/declaraciones/funciones.js"></script>
+  <script src="js/js.js"></script>
+</body>
+
+</html>
